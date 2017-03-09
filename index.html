@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Pseudocode</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <link rel="stylesheet" href="docs/css/bootstrap-3.3.7.min.css" type="text/css">
+        <link rel="stylesheet" href="docs/css/bootstrap-example.css" type="text/css">
+        <link rel="stylesheet" href="docs/css/prettify.css" type="text/css">
+
+        <script type="text/javascript" src="docs/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="docs/js/prettify.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                window.prettyPrint() && prettyPrint();
+            });
+        </script>
+        
+        <script type="text/javascript" src="dist/js/jquery-references.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#affix">
+	<a href="https://github.com/davidstutz/jquery-references"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" id="affix">
+                    <ul class="nav nav-pills nav-stacked sidebar" data-spy="affix" style="margin-top: 40px;">
+                        <li class="active"><a href="#getting-started">Getting Started</a></li>
+                        <li><a href="#examples">Examples</a>
+                        <li><a href="#license">License</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="page-header">
+                        <h1>jQuery References</h1>
+                    </div>
+                    
+                    <p>Simple and naive jQuery plugin for counting figures, listings, algorithms and references &mdash; similar to LaTeX. Mainly implemented to allow easy referencing in content management systems such as Wordpress.</p>
+
+                    <div class="page-header">
+                        <h2 id="examples">Examples</h2>
+                    </div>
+                    
+                    <div class="example">
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                $('.sp-lbl').reference('label', 'superpixels');
+                                $('.sp-ref').reference('reference', 'superpixels');
+                            });
+                        </script>
+                        <p>
+                            Despite the extensive pool of superpixel algorithms available [<span id="Ren2000" class="sp-ref"></span>][<span id="Achanta2010" class="sp-ref"></span>][<span id="Felzenswalb2004" class="sp-ref"></span>][<span id="Conrad2013" class="sp-ref"></span>][<span id="Bergh2012" class="sp-ref"></span>][<span id="Levinshtein2009" class="sp-ref"></span>][<span id="Lui2011" class="sp-ref"></span>][<span id="Moore2008a" class="sp-ref"></span>][<span id="Moore2008b" class="sp-ref"></span>][<span id="Mehrani2010" class="sp-ref"></span>][<span id="Papon2013" class="sp-ref"></span>][<span id="Weikersdorfer2012" class="sp-ref"></span>][<span id="Zhang2011" class="sp-ref"></span>], 
+                            it seems difficult to meet both speed requirements as well as quality requirements.
+                        </p>
+
+                        <ul class="list-unstyled small">
+                            <li>[<span id="Ren2000" class="sp-lbl"></span>] X. Ren, J. Malik. Learning a classication model for segmentation. Proceedings of the International Conference on Computer Vision, pages 10 - 17, 2000.</li>
+                            <li>[<span id="Achanta2010" class="sp-lbl"></span>] R. Achanta, A. Shaji, K. Smith, A. Lucchi, P. Fua, S. Susstrunk. SLIC Superpixels. Technical report, EPFL, Lausanne, 2010.</li>
+                            <li>[<span id="Felzenswalb2004" class="sp-lbl"></span>] P. F. Felzenswalb, D. P. Huttenlocher. Efficient graph-based image segmentation. International Journal of Computer Vision, volume 59, number 2, 2004.</li>
+                            <li>[<span id="Conrad2013" class="sp-lbl"></span>] C. Conrad, M. Mertz, R. Mester. Contour-Relaxed Superpixels. Energy Minimization Methods in Computer Vision and Pattern Recognition, volume 8081 of Lecture Notes in Computer Science, pages 280 - 293. Springer Berlin Heidelberg, 2013.</li>
+                            <li>[<span id="Bergh2012" class="sp-lbl"></span>] M. Van den Bergh, X. Boix, G. Roig, B. de Capitani, L. van Gool. SEEDS - Superpixels Extracted via Energy-Driven Sampling. European Conference on Computer Vision, pages 13- 26, 2012.</li>
+                            <li>[<span id="Levinshtein2009" class="sp-lbl"></span>] A. Levinshtein, A. Stere, K. N. Kutulakos, D. J. Fleet, S. J. Dickinson, K. Siddiqi. Turbopixels: Fast Superpixels Using Geometric Flows. IEEE Transactions on Pattern Analysis and Machine Intelligence, pages 2290 - 2297, 2009.</li>
+                            <li>[<span id="Lui2011" class="sp-lbl"></span>] M.-Y. Lui, O. Tuzel, S. Ramalingam, and R. Chellappa. Entropy Rate Superpixel Segmentation. Conference on Computer Vision and Pattern Recognition, pages 2097 - 2104, 2011.</li>
+                            <li>[<span id="Martin2011" class="sp-lbl"></span>] D. Martin, C. Fowlkes, D. Tal, J. Malik. A Database of Human Segmented Natural Images and Its Application to Evaluating Segmentation Algorithms and Measuring Ecological Statistics. International Conference on Computer Vision, pages 416 - 423, 2001.</li>
+                            <li>[<span id="Moore2008a" class="sp-lbl"></span>] A. P. Moore, J. D. Prince, J. Warrell. Lattice Cut - Constructing Superpixels Using Layer Constraints. Conference on Computer Vision and Pattern Recognition, pages 1 - 8, 2008.
+                            <li>[<span id="Moore2008b" class="sp-lbl"></span>] A. P. Moore, J. D. Prince, J. Warrell, U. Mohammed, G. Jones. Superpixel Lattices. Conference on Computer Vision and Pattern Recognition, pages 1 - 8, 2008.</li>
+                            <li>[<span id="Neubert2012" class="sp-lbl"></span>] P. Neubert, P. Protzel. Superpixel Benchmark and Comparison. Forum Bildverarbeitung, 2012.</li>
+                            <li>[<span id="Mehrani2010" class="sp-lbl"></span>] P. Mehrani, O. Veksler, Y. Boykov. Superpixels and Supervoxels in an Energy Optimization Framework. European Conference on Computer Vision, pages 211 - 224, 2010.</li>
+                            <li>[<span id="Papon2013" class="sp-lbl"></span>] J. Papon, A. Abramov, M. Schoeler, F. Wörgötter. Voxel Cloud Connectivity Segmentation - Supervoxels for Point Clouds. Conference on Computer Vision and Pattern Recognition, pages 2027 - 2034, 2013.</li>
+                            <li>[<span id="Schick2012" class="sp-lbl"></span>] A. Schick, M. Fischer, R. Steifelhagen. Measuring and Evaluating the Compactness of Superpixels. International Conference in Pattern Recognition, pages 930 - 934, 2012.</li>
+                            <li>[<span id="Shi2000" class="sp-lbl"></span>] J. Shi, J. Malik. Normalized Cuts and Image Segmentation. IEEE Transactions on Pattern Analysis and Machine Intelligence, pages 888 - 905, 2000.</li>
+                            <li>[<span id="Weikersdorfer2012" class="sp-lbl"></span>] D. Weikersdorfer, D. Gossow, M. Beetz. Depth-Adaptive Superpixels. International Conference on Pattern Recognition, pages 2087 - 2090, 2012.</li>
+                            <li>[<span id="Zhang2011" class="sp-lbl"></span>] Y. Zhang, R. hartley, J. Mashford, S. Burn. Superpixels via Pseudo-Boolean Optimization. International Conference on Computer Vision, pages 1387 - 1394, 2011.</li>
+                            <li>[<span id="Achanta2012" class="sp-lbl"></span>] R. Achanta, A. Shaji, K. Smith, A. Lucchi, P. Fua, S. Süsstrunk. SLIC Superpixels Compared to State-Of-The-Art Superpixel Methods. IEEE Transactions on Pattern Analysis and Machine Intelligence, pages 2274 - 2282, 2012.</li>
+                            <li>[<span id="Silberman2012" class="sp-lbl"></span>] N. Silberman, D. Hoiem, P. Kohli, R. Fergus. Indoor Segmentation and Support Inference from RGBD Images. ECCV, 2012.</li>
+                        </ul>
+                    </div>
+                    <div class="highlight">
+<pre class="prettyprint linenums">
+&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+        $('.lbl').reference('label', 'superpixels');
+        $('.ref').reference('reference', 'superpixels');
+    });
+&lt;/script&gt;
+&lt;p&gt;
+    Despite the extensive pool of superpixel algorithms available [&lt;span id="Ren2000" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Achanta2010" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Felzenswalb2004" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Conrad2013" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Bergh2012" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Levinshtein2009" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Lui2011" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Moore2008a" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Moore2008b" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Mehrani2010" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Papon2013" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Weikersdorfer2012" class="sp-ref"&gt;&lt;/span&gt;][&lt;span id="Zhang2011" class="sp-ref"&gt;&lt;/span&gt;], 
+    it seems difficult to meet both speed requirements as well as quality requirements.
+&lt;/p&gt;
+
+&lt;ul class="list-unstyled small"&gt;
+    &lt;li&gt;[&lt;span id="Ren2000" class="sp-lbl"&gt;&lt;/span&gt;] X. Ren, J. Malik. Learning a classication model for segmentation. Proceedings of the International Conference on Computer Vision, pages 10 - 17, 2000.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Achanta2010" class="sp-lbl"&gt;&lt;/span&gt;] R. Achanta, A. Shaji, K. Smith, A. Lucchi, P. Fua, S. Susstrunk. SLIC Superpixels. Technical report, EPFL, Lausanne, 2010.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Felzenswalb2004" class="sp-lbl"&gt;&lt;/span&gt;] P. F. Felzenswalb, D. P. Huttenlocher. Efficient graph-based image segmentation. International Journal of Computer Vision, volume 59, number 2, 2004.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Conrad2013" class="sp-lbl"&gt;&lt;/span&gt;] C. Conrad, M. Mertz, R. Mester. Contour-Relaxed Superpixels. Energy Minimization Methods in Computer Vision and Pattern Recognition, volume 8081 of Lecture Notes in Computer Science, pages 280 - 293. Springer Berlin Heidelberg, 2013.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Bergh2012" class="sp-lbl"&gt;&lt;/span&gt;] M. Van den Bergh, X. Boix, G. Roig, B. de Capitani, L. van Gool. SEEDS - Superpixels Extracted via Energy-Driven Sampling. European Conference on Computer Vision, pages 13- 26, 2012.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Levinshtein2009" class="sp-lbl"&gt;&lt;/span&gt;] A. Levinshtein, A. Stere, K. N. Kutulakos, D. J. Fleet, S. J. Dickinson, K. Siddiqi. Turbopixels: Fast Superpixels Using Geometric Flows. IEEE Transactions on Pattern Analysis and Machine Intelligence, pages 2290 - 2297, 2009.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Lui2011" class="sp-lbl"&gt;&lt;/span&gt;] M.-Y. Lui, O. Tuzel, S. Ramalingam, and R. Chellappa. Entropy Rate Superpixel Segmentation. Conference on Computer Vision and Pattern Recognition, pages 2097 - 2104, 2011.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Martin2011" class="sp-lbl"&gt;&lt;/span&gt;] D. Martin, C. Fowlkes, D. Tal, J. Malik. A Database of Human Segmented Natural Images and Its Application to Evaluating Segmentation Algorithms and Measuring Ecological Statistics. International Conference on Computer Vision, pages 416 - 423, 2001.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Moore2008a" class="sp-lbl"&gt;&lt;/span&gt;] A. P. Moore, J. D. Prince, J. Warrell. Lattice Cut - Constructing Superpixels Using Layer Constraints. Conference on Computer Vision and Pattern Recognition, pages 1 - 8, 2008.
+    &lt;li&gt;[&lt;span id="Moore2008b" class="sp-lbl"&gt;&lt;/span&gt;] A. P. Moore, J. D. Prince, J. Warrell, U. Mohammed, G. Jones. Superpixel Lattices. Conference on Computer Vision and Pattern Recognition, pages 1 - 8, 2008.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Neubert2012" class="sp-lbl"&gt;&lt;/span&gt;] P. Neubert, P. Protzel. Superpixel Benchmark and Comparison. Forum Bildverarbeitung, 2012.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Mehrani2010" class="sp-lbl"&gt;&lt;/span&gt;] P. Mehrani, O. Veksler, Y. Boykov. Superpixels and Supervoxels in an Energy Optimization Framework. European Conference on Computer Vision, pages 211 - 224, 2010.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Papon2013" class="sp-lbl"&gt;&lt;/span&gt;] J. Papon, A. Abramov, M. Schoeler, F. Wörgötter. Voxel Cloud Connectivity Segmentation - Supervoxels for Point Clouds. Conference on Computer Vision and Pattern Recognition, pages 2027 - 2034, 2013.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Schick2012" class="sp-lbl"&gt;&lt;/span&gt;] A. Schick, M. Fischer, R. Steifelhagen. Measuring and Evaluating the Compactness of Superpixels. International Conference in Pattern Recognition, pages 930 - 934, 2012.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Shi2000" class="sp-lbl"&gt;&lt;/span&gt;] J. Shi, J. Malik. Normalized Cuts and Image Segmentation. IEEE Transactions on Pattern Analysis and Machine Intelligence, pages 888 - 905, 2000.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Weikersdorfer2012" class="sp-lbl"&gt;&lt;/span&gt;] D. Weikersdorfer, D. Gossow, M. Beetz. Depth-Adaptive Superpixels. International Conference on Pattern Recognition, pages 2087 - 2090, 2012.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Zhang2011" class="sp-lbl"&gt;&lt;/span&gt;] Y. Zhang, R. hartley, J. Mashford, S. Burn. Superpixels via Pseudo-Boolean Optimization. International Conference on Computer Vision, pages 1387 - 1394, 2011.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Achanta2012" class="sp-lbl"&gt;&lt;/span&gt;] R. Achanta, A. Shaji, K. Smith, A. Lucchi, P. Fua, S. Süsstrunk. SLIC Superpixels Compared to State-Of-The-Art Superpixel Methods. IEEE Transactions on Pattern Analysis and Machine Intelligence, pages 2274 - 2282, 2012.&lt;/li&gt;
+    &lt;li&gt;[&lt;span id="Silberman2012" class="sp-lbl"&gt;&lt;/span&gt;] N. Silberman, D. Hoiem, P. Kohli, R. Fergus. Indoor Segmentation and Support Inference from RGBD Images. ECCV, 2012.&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                    </div>
+                    
+                    <div class="example">
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                $('.fg-lbl').reference('label', 'figures');
+                                $('.fg-ref').reference('reference', 'figures');
+                            });
+                        </script>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="figure">
+                                    <img src="docs/images/noimage.png" />
+                                    <p class="text-center">Figure <span class="fg-lbl" id="figure1"></span>: No image.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="figure">
+                                    <img src="docs/images/noimage.png" />
+                                    <p class="text-center">Figure <span class="fg-lbl" id="figure2"></span>: No image.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="figure">
+                                    <img src="docs/images/noimage.png" />
+                                    <p class="text-center">Figure <span class="fg-lbl" id="figure3"></span>: No image.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>
+                            See Figures <span class="fg-ref" id="figure1"></span>, <span class="fg-ref" id="figure2"></span> and <span class="fg-ref" id="figure3"></span>.
+                        </p>
+                    </div>
+                    <div class="highlight">
+<pre class="prettyprint linenums">
+&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+        $('.fg-lbl').reference('label', 'figures');
+        $('.fg-ref').reference('reference', 'figures');
+    });
+&lt;/script&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;div class="figure"&gt;
+            &lt;img src="docs/images/noimage.png" /&gt;
+            &lt;p class="text-center"&gt;Figure &lt;span class="fg-lbl" id="figure1"&gt;&lt;/span&gt;: No image.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;div class="figure"&gt;
+            &lt;img src="docs/images/noimage.png" /&gt;
+            &lt;p class="text-center"&gt;Figure &lt;span class="fg-lbl" id="figure2"&gt;&lt;/span&gt;: No image.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;div class="figure"&gt;
+            &lt;img src="docs/images/noimage.png" /&gt;
+            &lt;p class="text-center"&gt;Figure &lt;span class="fg-lbl" id="figure3"&gt;&lt;/span&gt;: No image.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+    See Figures &lt;span class="fg-ref" id="figure1"&gt;&lt;/span&gt;, &lt;span class="fg-ref" id="figure2"&gt;&lt;/span&gt; and &lt;span class="fg-ref" id="figure3"&gt;&lt;/span&gt;.
+&lt;/p&gt;
+</pre>
+                    </div>
+
+                    <div class="page-header">
+                        <h2 id="license">License</h2>
+                    </div>
+                    
+                    <p>
+                        Copyright (c) 2017 David Stutz<br>
+                        All rights reserved.
+                    </p>
+                    
+                    <p>
+                        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+                    </p>
+                    
+                    <ul>
+                        <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+                        <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+                        <li>Neither the name of David Stutz nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+                    </ul>
+                    
+                    <p>
+                        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+                    </p>
+                    
+                    <hr>
+                    <p>
+                        &copy; 2015
+                        <a href="http://davidstutz.de">David Stutz</a> - <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause License</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
