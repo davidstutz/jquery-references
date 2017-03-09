@@ -2,7 +2,7 @@
 
 Simple and naive jQuery plugin to allow referencing figures, listings, algorithms and references in a BibTeX-like style.
 
-See the [documentation](http://davidstutz.github.io/jquery-references/) for usage examples.
+See the [documentation](http://davidstutz.github.io/jquery-references/index.html) for usage examples.
 
 ![Example.](example.png?raw=true "Example.")
 
