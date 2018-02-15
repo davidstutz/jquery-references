@@ -4,7 +4,7 @@ Simple and naive jQuery plugin to allow referencing figures, listings, algorithm
 
 **Also check [this blog article](http://davidstutz.de/easily-referencing-publications-listings-or-figures-using-jquery-and-wordpress/).**
 
-See the [documentation](http://davidstutz.github.io/jquery-references/index.html) for usage examples.
+See the [documentation](http://davidstutz.de/jquery-references) for usage examples.
 
 ![Example.](example.png?raw=true "Example.")
 
