@@ -2,9 +2,9 @@
 
 Simple and naive jQuery plugin to allow referencing figures, listings, algorithms and references in a BibTeX-like style.
 
-**Also check [this blog article](http://davidstutz.de/easily-referencing-publications-listings-or-figures-using-jquery-and-wordpress/).**
+Also check [this blog article](http://davidstutz.de/easily-referencing-publications-listings-or-figures-using-jquery-and-wordpress/) or the [documentation](http://davidstutz.de/jquery-references) for usage examples.
 
-See the [documentation](http://davidstutz.de/jquery-references) for usage examples.
+Consider [donating](http://davidstutz.de/donate/) to support development.
 
 ![Example.](example.png?raw=true "Example.")
 
